@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+
+nav ul li {
+  padding: 20px;
+  font-size: 1.5em;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+nav ul a:nth-child(1) {
+  float: left;
+}
+
+nav ul a:nth-child(n+2) {
+  float: right;
+}
+
+nav ul li:hover {
+  background-color: #cccccc;
+}
+
+@media (max-width: 600px) {
+  nav li {
+    margin: unset !important;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav a {
+    float: unset !important;
+  }
+  nav ul {
+    overflow: unset !important;
+  }
+}
+
+#index-text {
+  margin-top: 60px;
+  color: black;
+  font-size: 4rem;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  margin: 10px auto 0 auto;
+  padding: 0 20px;
+  max-width: 600px;
+}
+
+form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 10px 10px 5px;
+  border: 1px solid black;
+  outline: none;
+}
+
+form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+/*Remove Default Form Styling*/
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+#footer p {
+  padding: 30px 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media (max-height: 800px) {
+  #footer {
+    position: static;
+    margin-top: 400px;
+  }
+  #footer p {
+    padding: 30px 0 200px 0;
+  }
+}
+
+.header {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+          justify-content: center;
+          align-items: center;
+  width: 90%;
+  height: 80px;
+  margin: 20px auto 0 auto;
+  text-transform: capitalize;
+  border-radius: 10px;
+  max-width: 560px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+}
+
+.form-message p {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.form-message-red {
+  border: 2px solid #ff0000;
+  background-color: #ffb3b3;
+}
+
+.form-message-green {
+  border: 2px solid green;
+  background-color: lightgreen;
+}
+
+.form-sub-msg {
+  width: 90%;
+  margin: 20px auto 0 auto;
+  color: #00334d;
+  max-width: 560px;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+}
